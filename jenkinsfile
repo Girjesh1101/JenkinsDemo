@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Staging') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Excutive') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+        post
+        {
+            always{
+                echo 'This will Always Run'
+            }
+        }
+    
+}
